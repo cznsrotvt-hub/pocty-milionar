@@ -21,7 +21,7 @@
 </div>
 
 <div id="formBox" style="display:none;">
-    <p><b>Otázka:</b> Seřaď od nejdříve k nejpozději:<br>A) Večeře<br>B) Oběd<br>C) Snídaně<br>D) Svačina</p>
+    <p><b>Otázka:</b> Seřaď od nejmenšího čísla:<br>A) Deset<br>B) Sedm<br>C) Tři<br>D) Dvacet</p>
 
     <label>Odpověď (např. ADCB):</label><br>
     <input id="odpoved"><br><br>
@@ -47,7 +47,7 @@ function submitAnswer() {
     let jmeno = document.getElementById("jmeno").value;
     let odpoved = document.getElementById("odpoved").value.trim().toUpperCase();
 
-    let spravna = "CBDA";
+    let spravna = "CBAD";
     let ok = (odpoved === spravna);
 
     document.getElementById("formBox").style.display = "none";
